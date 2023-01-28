@@ -1,0 +1,79 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    padding: 30px;
+    width: 90vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.quoteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    flex-direction: row;
+}
+
+.author {
+    text-align: right;
+    margin-bottom: 30px;
+    font-weight: 300;
+    animation: fade-inout 1s;
+}
+
+.altAuthor {
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.bottomSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+button {
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+.quoteIcon {
+    font-size: 40px;
+}
+
+@keyframes fade-inout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.quote {
+    animation: fade-inout 1s;
+}
